@@ -1,0 +1,129 @@
+
+$mainColor:#aa0601;
+body{
+    margin: 0 auto;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+}
+.options{
+    justify-content: center;
+    .optionsTitle{
+        border-bottom: 10px solid $mainColor;
+        width: 33%;
+    }
+    li{
+        color: #000;
+        padding: 24px 86px;
+        align-items: center;
+        span{
+            line-height: 55px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img{
+            width: 28px;
+            height: 41px;
+            margin-right: 10px;
+        }
+    }
+}  
+.headerImg{
+    justify-content: space-between;
+    margin-bottom: 50px;
+    img{
+        max-width: 49%;
+    }
+}
+.products{
+    flex-direction: column;
+    margin-bottom: 20px;
+    h1{
+        height: 55px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .productsDiv{
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 25px;
+        font-weight: bold;
+        justify-content: center;
+        div{
+            margin: 10px;
+            img{
+            }
+            div{
+                section{
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.priceDiv{
+    justify-content: space-between;
+}
+.priceColor{
+    color:$mainColor;
+}
+.colorBox{
+    justify-content: flex-start;
+}
+.p1{
+    background-color: #5f3e2d;
+    height: 10px;
+    width: 10px;
+    border-radius: 20%;
+    margin: 1px;
+}
+.p2{
+    background-color: #bd673b;
+    height: 10px;
+    width: 10px;
+    border-radius: 20%;
+    margin: 1px;
+}
+.pageBtn{
+    padding: 5px;
+    border: 1px solid gray;
+} 
+.pageBtnact{
+    font-weight: bold;
+    background-color: gray;
+    color: #fff;
+}
+.directionBtn{
+    padding: 5px;
+    border: 1px solid gray;
+}
+// RWD
+@media(max-width:768px){
+    .nav{
+        justify-content: center;
+        img{
+            margin: 20px 100px ;
+        }
+    }
+    .options{
+        li{
+            padding: 24px 20px
+        }
+        .optionsTitle {
+            width: 25%;
+        }
+    } 
+  
+}
+@media(max-width:414px){
+    
+}
