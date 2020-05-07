@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $('.toggleImg').hover(function(event){
+        $('.toggleImg').attr('src','/week3/product-2-color.png');
+    });
+    $('.toggleImg').mouseout(function(event){
+        $('.toggleImg').attr('src','/week3/product-2.png');
+    }); 
+    $('.contactInput').click(function(event){
+        $(this).val('');
+    })
+});
